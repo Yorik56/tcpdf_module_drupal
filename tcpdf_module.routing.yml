@@ -1,0 +1,7 @@
+tcpdf_module.download:
+  path: '/download-pdf'
+  defaults:
+    _controller: '\Drupal\tcpdf_module\Controller\PdfController::downloadPdf'
+    _title: 'Télécharger PDF'
+  requirements:
+    _permission: 'access content'

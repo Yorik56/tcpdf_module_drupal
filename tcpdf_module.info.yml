@@ -1,0 +1,24 @@
+name: 'TCPDF Module'
+type: module
+description: 'Provides TCPDF functionalities.'
+core_version_requirement: ^10
+package: Custom
+dependencies:
+  - drupal:core (>=10.0)
+version: '1.0'
+project: 'tcpdf_module'
+
+# Add the following lines
+libraries:
+  - tcpdf_module/tcpdf_styles
+
+theme:
+  header:
+    template: header
+    path: templates
+  body:
+    template: body
+    path: templates
+  footer:
+    template: footer
+    path: templates

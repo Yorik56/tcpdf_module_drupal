@@ -1,0 +1,10 @@
+services:
+  tcpdf_module.pdf_generator:
+    class: Drupal\tcpdf_module\Service\PdfGeneratorService
+    arguments: [
+      '@request_stack',
+      '@theme.manager',
+      '@theme.initialization',
+      '@module_handler',
+      '@renderer'
+    ]
